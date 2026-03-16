@@ -1,6 +1,6 @@
 {
-  "name": "ttls-cli",
-  "version": "1.0.0",
+  "name": "@2null/ttls-controller",
+  "version": "1.0.1",
   "description": "CLI tool to control TikTok Live Studio (TTLS) via its local Socket.IO API",
   "main": "index.js",
   "type": "module",
@@ -10,15 +10,24 @@
   "scripts": {
     "start": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2N3ll/ttls-controller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2N3ll/ttls-controller/issues"
+  },
+  "homepage": "https://github.com/2N3ll/ttls-controller#readme",
   "keywords": [
     "tiktok",
     "live",
     "studio",
     "ttls",
     "streamdeck",
-    "cli"
+    "cli",
+    "controller"
   ],
-  "author": "",
+  "author": "2N3ll",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",

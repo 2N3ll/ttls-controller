@@ -18,7 +18,7 @@ This is a modern Node.js Command Line Interface (CLI) built on top of a reverse-
 You can install `ttls-cli` globally via npm to make it available anywhere on your system.
 
 ```bash
-npm install -g ttls-cli
+npm install -g @2null/ttls-controller
 ```
 
 *(Note: If you are running from the source repository, you can use `npm link` instead to install the CLI locally.)*
