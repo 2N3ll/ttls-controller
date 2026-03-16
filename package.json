@@ -1,0 +1,28 @@
+{
+  "name": "ttls-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to control TikTok Live Studio (TTLS) via its local Socket.IO API",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "ttls-cli": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "tiktok",
+    "live",
+    "studio",
+    "ttls",
+    "streamdeck",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "socket.io-client": "^4.7.2"
+  }
+}
