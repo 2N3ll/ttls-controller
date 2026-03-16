@@ -9,7 +9,8 @@ This is a modern Node.js Command Line Interface (CLI) built on top of a reverse-
 - 🕵️ **Port Scanning**: Automatically finds and connects to the active TTLS local server.
 - 🔄 **State Sync**: Retrieve the current scenes and settings from TTLS.
 - 🎬 **Scene Switcher**: Switch to any of your scenes with a single command.
-- 🎛️ **Quick Toggles**: Toggle your Microphone, System Audio, Recording, and Live status instantly.
+- 🖼️ **Source Toggling**: Show or hide sources within your scene.
+- 🎛️ **Extensive Triggers**: Over 20+ supported actions, from Mutli-Guest and Co-Host panels to Audio Filters and Treasure Boxes.
 
 ---
 
@@ -18,44 +19,73 @@ This is a modern Node.js Command Line Interface (CLI) built on top of a reverse-
 You can install `ttls-cli` globally via npm to make it available anywhere on your system.
 
 ```bash
-npm install -g ttls-controller
+npm install -g @2null/ttls-controller
 ```
 
 *(Note: If you are running from the source repository, you can use `npm link` instead to install the CLI locally.)*
 
 ---
 
-## Usage
+## Command Reference
 
-Once installed, you can use the `ttls-cli` command anywhere in your terminal.
-
-### 1. Get Current Info
-Connects to TTLS, fetches current settings (like active and available scenes), and prints the data:
+### `ttls-cli info`
+Connects to TTLS, fetches current settings (like active and available scenes), and prints the data.
 ```bash
 ttls-cli info
 ```
 
-### 2. Switch Scenes
-Switch your TTLS layout to a specific scene by name:
+### `ttls-cli scene <scene_name>`
+Switch your TTLS layout to a specific scene by name.
 ```bash
 ttls-cli scene "Just Chatting"
 ```
 
-### 3. Toggles
-Quickly toggle specific stream states. The `<target>` can be `mic`, `audio`, `record`, or `live`:
+### `ttls-cli source <source_name>`
+Show or hide a specific source by name.
 ```bash
-# Toggle the Microphone
-ttls-cli toggle mic
-
-# Toggle Desktop/System Audio
-ttls-cli toggle audio
-
-# Toggle Local Recording
-ttls-cli toggle record
-
-# Start / End the LIVE broadcast
-ttls-cli toggle live
+ttls-cli source "Webcam"
 ```
+
+### `ttls-cli trigger <action>`
+Trigger any simple action, panel, or effect. See the full list of available actions below.
+```bash
+# Example: Toggle the Microphone
+ttls-cli trigger mic
+
+# Example: Open the Co-Host panel
+ttls-cli trigger co-host
+```
+
+---
+
+## Full List of Supported Triggers
+
+You can use any of the following actions with the `ttls-cli trigger <action>` command:
+
+*   `mic`: Mute / unmute microphone
+*   `audio`: Mute / unmute audio output
+*   `record`: Start / stop local recording
+*   `live`: Go / end LIVE
+*   `live-pause`: Pause / resume LIVE
+*   `highlight`: Highlight this moment
+*   `vibe`: Dynamic effects
+*   `say-hi`: Say hi to viewers
+*   `sound-effect`: Play sound effect
+*   `audio-filter`: Turn on / off audio effect
+*   `camera-effect`: Turn on / off camera effect
+*   `co-host`: Open "Co-host"
+*   `treasure-box`: Open "Treasure Box"
+*   `guess-game`: Open "Guessing game"
+*   `play-together`: Open "Play Together"
+*   `goody-bag`: Open "Goody Bag"
+*   `vote`: Open "Poll & Gift vote"
+*   `live-goal`: Open "LIVE goal"
+*   `multi-guest`: Open "Multi-guest"
+*   `team`: Open "Team"
+*   `game-rewards`: Open "Game Rewards"
+*   `promote`: Open "Promote"
+*   `mic-control`: Open "MicControl"
+*   `audio-control`: Open "AudioControl"
 
 ---
 
