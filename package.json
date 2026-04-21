@@ -1,6 +1,6 @@
 {
   "name": "ttls-controller",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CLI tool to control TikTok Live Studio (TTLS) via its local Socket.IO API",
   "main": "index.js",
   "type": "module",
