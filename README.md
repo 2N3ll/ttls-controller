@@ -111,4 +111,4 @@ Contributions are always welcome! If you find new Action UUIDs, or want to add f
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under The Unlicense. See `LICENSE` for more information.
