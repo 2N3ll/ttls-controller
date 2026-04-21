@@ -28,7 +28,7 @@
     "controller"
   ],
   "author": "2N3ll",
-  "license": "MIT",
+  "license": "Unlicense",
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^11.1.0",
